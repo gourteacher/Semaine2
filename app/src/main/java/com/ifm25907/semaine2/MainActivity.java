@@ -3,8 +3,10 @@ package com.ifm25907.semaine2;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,7 +18,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.i( TAG, "onCreate");
+        Log.i(TAG, "onCreate");
+    }
+
+    public void changer_activite(View view){
+        Intent i = new Intent(MainActivity.this, ActiviteSeconde.class);
+        startActivity(i);
     }
 
     @Override

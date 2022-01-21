@@ -19,10 +19,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".ActiviteSeconde">
-        </activity>
-
     </application>
 
 </manifest>

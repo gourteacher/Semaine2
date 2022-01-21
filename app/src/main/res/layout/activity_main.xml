@@ -19,16 +19,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/cliquer"
-        android:layout_width="244dp"
-        android:layout_height="68dp"
-        android:layout_marginTop="168dp"
-        android:onClick="changer_activite"
-        android:text="@string/cliquer"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        tools:ignore="MissingConstraints" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

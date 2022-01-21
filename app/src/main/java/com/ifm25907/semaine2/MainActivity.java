@@ -24,9 +24,6 @@ public class MainActivity extends AppCompatActivity {
         super.onRestoreInstanceState(savedInstanceState);
         Log.i( TAG, "onRestoreInstanceState"       );
 
-        final EditText editText = findViewById(R.id.editText);
-        CharSequence  userText = savedInstanceState.getCharSequence("saveText");
-        editText.setText(userText);
 
     }
 
@@ -35,9 +32,6 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
         Log.i( TAG, "onSaveInstanceState");
 
-        final EditText editText = findViewById(R.id.editText);
-        CharSequence userText = editText.getText();
-        outState.putCharSequence("saveText", userText);
 
 
     }
